@@ -4,61 +4,316 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ormy — Privacy Policy</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    max-width: 680px; margin: 0 auto; padding: 24px 20px 60px;
-    line-height: 1.6; color: #1a1a2e; background: #ffffff;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e8e8f0; background: #0d0d1a; }
-    a { color: #9d8cff; }
-  }
-  h1 { font-size: 1.6rem; margin-bottom: 0.2em; }
-  h2 { font-size: 1.15rem; margin-top: 2em; }
-  .updated { opacity: 0.6; font-size: 0.9rem; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<a class="back" href="index.html">← All legal documents</a>
+
 <h1>Privacy Policy</h1>
-<p class="updated">Ormy — last updated 10 July 2026</p>
+<p class="updated">Ormy · Version 2.1 · Effective 27 August 2026</p>
+<p class="updated" style="opacity:0.75">Changed in 2.1: location reminders are described in full (new section 2.2 and two new rows in section 2). Version 2.0 said Ormy did not collect location at all, which stopped being true when location reminders were added.</p>
 
-<p>Ormy is a proactive AI reminder assistant operated by Turbolt ("we", "us"). This policy explains what data we collect, why, and what we do with it. The short version: we collect only what the app needs to work, we never sell your data, and you can delete everything at any time.</p>
+<div class="summary">
+  <h2>The short version</h2>
+  <ul>
+    <li>We collect the things you tell Ormy, so it can remind you about them. That is the whole point of the app.</li>
+    <li>Your messages go to Anthropic to generate replies. <strong>They are not used to train AI models.</strong></li>
+    <li>We never sell your data, never show ads, and never share it with advertisers or data brokers.</li>
+    <li>We do not read your phone's calendar, contacts, photos or microphone recordings.</li>
+    <li>If you pin a reminder to a place, we store that place and your phone watches for it. Ormy never keeps a history of where you have been.</li>
+    <li><strong>Settings → Delete account</strong> permanently erases everything. It is one tap, and we do not ask why.</li>
+  </ul>
+  <p style="margin:0.8em 0 0;font-size:0.9rem;">The detail below is what we are legally held to. It is written to be read, not to be skimmed past.</p>
+</div>
 
-<h2>What we collect</h2>
+<h2>1. Who is responsible for your data</h2>
+
+<div class="entity">
+  <p><strong>Kyle Ormesher</strong>, a sole trader established in the Isle of Man, trading as <strong>Ormy</strong>, is the <strong>data controller</strong> for the personal data described in this policy.</p>
+  <p>Data protection contact: <a href="mailto:kyle.orm@turbolt.co.uk">kyle.orm@turbolt.co.uk</a> — this is the address for every request in section 9, and it is read by a person.</p>
+  <p>A postal address is available on request, and is published on the App Store listing where the law requires it.</p>
+  <p>UK and EU representative (UK GDPR Article 27 / EU GDPR Article 27): <em>[TO BE APPOINTED — see legal/README.md]</em></p>
+</div>
+
+<p>"Controller" means we are the ones who decide what data is collected and why, and we are accountable for it. This policy explains what we collect, why we are allowed to, who else touches it, how long we keep it, and what you can make us do about it.</p>
+
+<h2>2. What we collect and why</h2>
+
+<p>Everything below is collected because a specific part of the app needs it. There is no category here that exists "just in case".</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>What</th><th>Why we have it</th><th>Lawful basis</th><th>How long</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name and email address</strong><br><span style="opacity:0.7">Given at sign-up, or by Apple if you use Sign in with Apple.</span></td>
+      <td>To create your account, to sign you in, to address you by name in the app, and to contact you about your account.</td>
+      <td>Performance of a contract</td>
+      <td>Until you delete your account</td>
+    </tr>
+    <tr>
+      <td><strong>Your reminders</strong><br><span style="opacity:0.7">Titles, categories, dates, times, repeat patterns, lead times, notification preferences, whether they are done, snoozed or skipped.</span></td>
+      <td>This is the service. Without it Ormy cannot remind you of anything.</td>
+      <td>Performance of a contract<br>(plus explicit consent for anything health-related — see section 3)</td>
+      <td>Until you delete them, or delete your account</td>
+    </tr>
+    <tr>
+      <td><strong>Your conversations with Ormy</strong><br><span style="opacity:0.7">Everything you type or dictate, and Ormy's replies.</span></td>
+      <td>To generate responses, and so Ormy remembers context between sessions rather than starting cold every time.</td>
+      <td>Performance of a contract<br>(plus explicit consent for anything health-related — see section 3)</td>
+      <td>Until you delete your account</td>
+    </tr>
+    <tr>
+      <td><strong>Onboarding answers</strong><br><span style="opacity:0.7">The goals and struggles you select, your preferred communication style, and your check-in times.</span></td>
+      <td>To set the app up for you and to pitch Ormy's tone and timing to suit you.</td>
+      <td>Consent</td>
+      <td>Until you delete your account</td>
+    </tr>
+    <tr>
+      <td><strong>Check-in records</strong><br><span style="opacity:0.7">The check-ins sent to you, a short summary, and whether you acknowledged them.</span></td>
+      <td>To avoid sending you the same thing twice, and to show you what Ormy has done.</td>
+      <td>Performance of a contract</td>
+      <td>Until you delete your account</td>
+    </tr>
+    <tr>
+      <td><strong>Activity log</strong><br><span style="opacity:0.7">A record of each nudge, pre-event alert, check-in, completion, snooze and skip.</span></td>
+      <td>To power the in-app summary of what Ormy has done for you, and your monthly recap.</td>
+      <td>Performance of a contract</td>
+      <td><strong>90 days</strong>, then deleted. Running totals are kept in non-itemised form until you delete your account.</td>
+    </tr>
+    <tr>
+      <td><strong>Monthly and trial recaps</strong><br><span style="opacity:0.7">Counts for the month plus two short lines of AI-written copy about them.</span></td>
+      <td>To show you your recap, and so it still reads correctly after the underlying activity rows have been deleted.</td>
+      <td>Performance of a contract</td>
+      <td>Until you delete your account</td>
+    </tr>
+    <tr>
+      <td><strong>Push notification token and time zone offset</strong><br><span style="opacity:0.7">A device identifier issued by Apple/Expo, plus your UTC offset and preferred check-in times. Where you use the lock screen Live Activity, a second Apple-issued token for that.</span></td>
+      <td>To deliver notifications to your device at the right local time. Without it, nothing arrives.</td>
+      <td>Performance of a contract, and your device-level consent to notifications</td>
+      <td>Until you sign out, uninstall, or delete your account</td>
+    </tr>
+    <tr>
+      <td><strong>Places you pin to a reminder</strong><br><span style="opacity:0.7">For each location reminder: the coordinates of the spot you chose, the size of the circle around it, its address or the name you gave it, and whether it should fire on arrival or on leaving.</span></td>
+      <td>So the reminder can go off when you get there. Without the coordinates there is nothing for your phone to watch for.</td>
+      <td>Performance of a contract<br><span style="opacity:0.7">(plus explicit consent for anything health-related — see section 3)</span></td>
+      <td>Until you delete the reminder, or delete your account</td>
+    </tr>
+    <tr>
+      <td><strong>Your approximate distance from those places</strong><br><span style="opacity:0.7">Worked out on your phone while the app is open, to sort the list and show how far away each one is.</span></td>
+      <td>To tell you which of your location reminders you could deal with now.</td>
+      <td>Performance of a contract</td>
+      <td>Not stored. It is calculated on your device and is gone when you close the screen.</td>
+    </tr>
+    <tr>
+      <td><strong>Subscription status</strong><br><span style="opacity:0.7">Whether you are free, on trial or subscribed, and when a trial ends.</span></td>
+      <td>To unlock what you have paid for and to warn you before a trial converts.</td>
+      <td>Performance of a contract</td>
+      <td>Until you delete your account</td>
+    </tr>
+    <tr>
+      <td><strong>AI usage counter</strong><br><span style="opacity:0.7">A per-day count of AI requests on your account. Not the content — just the number.</span></td>
+      <td>To enforce the fair-use ceiling and stop runaway or automated usage running up costs.</td>
+      <td>Legitimate interests — protecting the service from abuse and cost overrun</td>
+      <td>Reset daily</td>
+    </tr>
+    <tr>
+      <td><strong>Feedback you send us</strong><br><span style="opacity:0.7">Your message, plus your name and email so we can reply.</span></td>
+      <td>To fix bugs and act on what you tell us.</td>
+      <td>Legitimate interests — improving the product and responding to you</td>
+      <td>Your name, email and account link are removed when you delete your account. The message itself may be kept, anonymised.</td>
+    </tr>
+    <tr>
+      <td><strong>Diagnostic and crash data</strong><br><span style="opacity:0.7">Technical logs, error reports, device model and OS version, collected by Apple and by our infrastructure providers.</span></td>
+      <td>To find out why something broke.</td>
+      <td>Legitimate interests — keeping the app working and secure</td>
+      <td>Typically 30–90 days, per the provider</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3>2.1 What we do not collect</h3>
+
 <ul>
-  <li><strong>Account details</strong> — your name and email address, used to sign you in. Authentication is handled by Clerk.</li>
-  <li><strong>Your reminders and events</strong> — the appointments, birthdays, tasks and dates you ask Ormy to remember, stored securely in our database (Convex) so they sync and so notifications can be sent.</li>
-  <li><strong>Chat messages</strong> — what you say to Ormy, stored so it can remember context across conversations. Messages are processed by Anthropic's Claude AI to generate responses. Anthropic does not use this data to train its models.</li>
-  <li><strong>Push notification token</strong> — a device identifier needed to deliver reminders to your phone.</li>
-  <li><strong>Subscription status</strong> — handled by Apple and RevenueCat. We never see your payment details.</li>
+  <li><strong>Your device calendar.</strong> Ormy keeps its own internal calendar and does not read Apple Calendar or Google Calendar.</li>
+  <li><strong>Your contacts, photos or files.</strong></li>
+  <li><strong>A history of your movements.</strong> Location reminders work by asking iOS to watch a circle you drew and to wake Ormy when you cross its edge. Your phone does the watching. We are told that a crossing happened, not where you were before it, and we never build a trail of your movements. See section 2.2 for what we do store.</li>
+  <li><strong>Voice recordings.</strong> Where you dictate to Ormy, speech-to-text is performed by your device's own operating system. We receive the resulting text, never the audio.</li>
+  <li><strong>Payment card details.</strong> Purchases are handled by Apple. We never see, hold or process your card.</li>
+  <li><strong>Advertising or cross-app tracking identifiers.</strong> Ormy contains no advertising SDKs and does not track you across other apps or websites.</li>
 </ul>
 
-<h2>What we don't do</h2>
+<h3>2.2 Location reminders, in detail</h3>
+<p>This is the part of Ormy that has the most to explain, so it gets its own section.</p>
+<p>A location reminder is one you attach to a place instead of a time — "get milk when I reach the shop". To make that work, three things happen:</p>
 <ul>
-  <li>We don't sell or rent your data to anyone.</li>
-  <li>We don't show ads or share data with advertisers.</li>
-  <li>We don't read your device calendar, contacts, or location.</li>
-  <li>We don't use your conversations to train AI models.</li>
+  <li><strong>You choose the place.</strong> You either search for an address or use where you are standing. We store the coordinates of the spot you picked, the radius you chose, and a label for it. That label is usually the street address, which your phone works out for us.</li>
+  <li><strong>Your phone watches for it.</strong> We hand those circles to iOS, which monitors them at the operating-system level, including when Ormy is closed. This is why the app asks for "Always" location permission. iOS wakes the app when you cross an edge; it does not report your position to us the rest of the time, and we do not ask it to.</li>
+  <li><strong>While the app is open</strong>, and only then, Ormy reads your current position once so it can show you how far away each place is. That reading is used on your device and is not sent to our servers or stored.</li>
+</ul>
+<p><strong>What this means in plain terms.</strong> We hold a list of the places you chose to tell us about. We do not hold a record of where you have been, when you were there, or where you are now. Nobody can query our database to find out where you are, because that is not in it.</p>
+<p>You can remove a place at any time by editing or deleting the reminder, and you can switch location permission off in your device settings — the rest of the app carries on working, and only location reminders stop firing.</p>
+
+<h2>3. Health and other sensitive information</h2>
+
+<div class="important">
+  <p><strong>Ormy is designed for people who need reminders for things like medication, therapy sessions, and hospital appointments. If you put those into Ormy, you are giving us information about your health.</strong></p>
+  <p>Under data protection law that is "special category" data, and it needs a stronger legal basis than the rest. Ours is <strong>your explicit consent</strong>, which you give by choosing to enter it.</p>
+</div>
+
+<p>In practice, this covers:</p>
+
+<ul>
+  <li>a reminder whose title reveals a health condition, treatment or medication;</li>
+  <li>anything you tell Ormy in conversation about your physical or mental health;</li>
+  <li>onboarding answers about the difficulties you experience, where those relate to a condition or disability;</li>
+  <li>a place you pin, where the place itself gives it away — a clinic, a hospital, a pharmacy or a treatment centre.</li>
 </ul>
 
-<h2>Who your data is shared with</h2>
-<p>Only the service providers that make the app work: Clerk (sign-in), Convex (database), Anthropic (AI responses), Expo (push notification delivery), and RevenueCat/Apple (subscriptions). Each receives only what it needs for its job.</p>
+<p>We use that information for one purpose only: running Ormy for you. We do not profile you on the basis of it, we do not share it with anyone beyond the providers listed in section 5, and we never use it for marketing.</p>
 
-<h2>How long we keep it</h2>
-<p>Your data is kept while your account is active. Delete your account and your reminders, chat history and profile are permanently removed from our systems.</p>
+<p><strong>You can withdraw that consent at any time</strong> by deleting the reminder or message concerned, or by deleting your account. Withdrawing consent does not affect anything we lawfully did before you withdrew it. If you would rather not give us health information at all, you can keep the wording of your reminders vague — Ormy will remind you about "appointment, 3pm" just as reliably as it will remind you about anything more specific.</p>
 
-<h2>Your rights</h2>
-<p>You can ask us to show you, correct, or delete the personal data we hold about you at any time. UK/EU users have these rights under GDPR. Just email us.</p>
+<p>Please also avoid putting other people's sensitive information into Ormy. A birthday reminder for a friend is fine. Details of someone else's medical treatment are not yours to share with us.</p>
 
-<h2>Children</h2>
-<p>Ormy is not intended for children under 13, and we do not knowingly collect data from them.</p>
+<h2>4. How your data is used to send you notifications</h2>
 
-<h2>Changes</h2>
-<p>If this policy changes in a way that matters, we'll let you know in the app.</p>
+<p>This is the one processing activity worth spelling out, because it runs while you are not using the app.</p>
 
-<h2>Contact</h2>
-<p>Questions or requests: <a href="mailto:kyle.orm@turbolt.co.uk">kyle.orm@turbolt.co.uk</a></p>
+<p>There are two of these. The first is geofencing, described in section 2.2: your phone, not our server, watches for the places you pinned, and does so while the app is closed. When it wakes Ormy, the alert is prepared on your device.</p>
+<p>The second is scheduling. Our servers check, on a schedule, which reminders are due and which devices are at the local time you asked to be checked in at. When one matches, a notification is sent to your device through Apple's Push Notification service, by way of Expo's push service. The notification contains the reminder text you wrote, which means it may appear on your lock screen. If you would rather that text were not visible to anyone who picks up your phone, you can hide notification previews in your device settings.</p>
+
+<p>None of this involves a decision about you that produces legal effects or anything similarly significant. Ormy has no automated decision-making of that kind, and does not profile you for advertising or credit purposes.</p>
+
+<h2>5. Who else touches your data</h2>
+
+<p>We use a small number of service providers to run Ormy. They act on our instructions, under contract, and only for the purposes below. <strong>None of them is permitted to use your data for their own purposes.</strong></p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Provider</th><th>What it does</th><th>What it receives</th><th>Where</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Clerk</strong></td><td>Sign-in and account security</td><td>Name, email, authentication data</td><td>United States</td></tr>
+    <tr><td><strong>Convex</strong></td><td>Database and server functions</td><td>Everything in section 2 that we store</td><td>United States</td></tr>
+    <tr><td><strong>Anthropic</strong></td><td>The AI that generates Ormy's replies</td><td>Your messages and relevant reminder context, at the moment a reply is generated</td><td>United States</td></tr>
+    <tr><td><strong>Expo</strong></td><td>Push notification delivery and app updates</td><td>Push token and notification content</td><td>United States</td></tr>
+    <tr><td><strong>Apple</strong></td><td>App distribution, push delivery, payments</td><td>Push token, notification content, purchase records</td><td>United States / global</td></tr>
+    <tr><td><strong>RevenueCat</strong></td><td>Subscription management</td><td>An anonymous purchase identifier and subscription status</td><td>United States</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>The current list, with links to each provider's own privacy terms, is maintained at <a href="subprocessors.html">our sub-processor page</a>. We will update it whenever a provider is added or replaced.</p>
+
+<p><strong>Anthropic and AI training.</strong> Your conversations are sent to Anthropic's API purely to generate a reply. Under Anthropic's commercial terms, inputs and outputs submitted through the API are not used to train their models. Anthropic retains data only as long as needed to provide the service and to meet its own trust and safety obligations.</p>
+
+<h3>5.1 Other disclosures</h3>
+
+<p>We will also disclose personal data where we are legally required to — for example in response to a valid court order or lawful request from a public authority. Where we are permitted to tell you about such a request, we will.</p>
+
+<p>If Ormy is ever sold, merged or transferred, your data may transfer with it. Any buyer would be bound by this policy, or by one no less protective, and we would tell you before it happened.</p>
+
+<p><strong>We do not sell your personal data, and we do not share it for cross-context behavioural advertising.</strong> We never have and we have no plans to.</p>
+
+<h2>6. Sending data outside the UK and EEA</h2>
+
+<p>Our providers are based in the United States, so your data is transferred there.</p>
+
+<p>Where data leaves the UK or the European Economic Area, we rely on the safeguards the law provides for that: the European Commission's Standard Contractual Clauses, together with the UK International Data Transfer Addendum (or the UK IDTA), incorporated into our agreements with each provider, plus the additional technical measures described in section 8. Some of our providers are also certified under the EU–US Data Privacy Framework and its UK extension.</p>
+
+<p>You can ask us for details of the safeguards in place for any specific provider by emailing us.</p>
+
+<h2>7. How long we keep things</h2>
+
+<p>The retention period for each category is in the table in section 2. In general:</p>
+
+<ul>
+  <li><strong>While your account exists</strong>, we keep what the app needs to work.</li>
+  <li><strong>The activity log is trimmed after 90 days.</strong> Individual entries are deleted; only non-itemised running totals remain, so your all-time figures do not reset.</li>
+  <li><strong>When you delete your account</strong>, your user record, reminders, messages, check-ins, activity log, recaps and push tokens are permanently deleted from our database. Your authentication record with Clerk is deleted at the same time. Feedback you sent is stripped of your name, email address and account identifier.</li>
+  <li><strong>Backups.</strong> Deleted data may persist in encrypted infrastructure backups for a short rolling period before those backups expire. It is not restored to the live service and is not accessible to us in the ordinary course.</li>
+  <li><strong>Purchase records.</strong> Apple keeps its own records of transactions for its own legal and tax purposes. We cannot delete those, and neither can you.</li>
+</ul>
+
+<h2>8. How we protect your data</h2>
+
+<ul>
+  <li><strong>Encryption in transit</strong> — all traffic between the app, our servers and every provider uses TLS.</li>
+  <li><strong>Encryption at rest</strong> — our database provider encrypts stored data.</li>
+  <li><strong>Access control on every query</strong> — every server function that reads or writes your data first establishes who is asking, and returns only that person's records. Users cannot reach each other's data.</li>
+  <li><strong>Managed authentication</strong> — we do not build or store passwords ourselves. That is handled by Clerk, which specialises in it.</li>
+  <li><strong>No payment data</strong> — we never hold card details, so they cannot be taken from us.</li>
+  <li><strong>Least privilege</strong> — access to production systems is limited to those who need it, protected by multi-factor authentication.</li>
+  <li><strong>Rate and spend limits</strong> — to contain abuse and runaway automated usage.</li>
+</ul>
+
+<p>No system is perfectly secure, and we will not pretend otherwise. If a breach happens that is likely to result in a risk to your rights and freedoms, we will notify the relevant supervisory authority within 72 hours of becoming aware of it, and we will tell you directly and without undue delay where the risk to you is high.</p>
+
+<h2>9. Your rights</h2>
+
+<p>If you are in the UK, the EEA, or another region with comparable law, you have the following rights over your personal data. They are free to exercise.</p>
+
+<ul>
+  <li><strong>Access</strong> — get a copy of the personal data we hold about you.</li>
+  <li><strong>Rectification</strong> — have inaccurate data corrected.</li>
+  <li><strong>Erasure</strong> — have your data deleted. <em>You can do this yourself, immediately, in Settings → Delete account.</em></li>
+  <li><strong>Portability</strong> — receive your data in a structured, machine-readable format, or have it sent to another provider where technically feasible.</li>
+  <li><strong>Restriction</strong> — have us pause processing while a dispute about accuracy or lawfulness is resolved.</li>
+  <li><strong>Objection</strong> — object to processing we carry out on the basis of legitimate interests.</li>
+  <li><strong>Withdraw consent</strong> — at any time, for anything we rely on consent for, including health-related content and notifications.</li>
+  <li><strong>Complain</strong> — to a data protection authority (see section 10).</li>
+</ul>
+
+<h3>9.1 How to exercise them</h3>
+
+<p><strong>To delete everything</strong>, use <strong>Settings → Delete account</strong> in the app. It is immediate and needs nothing from us.</p>
+
+<p><strong>For anything else</strong>, email <a href="mailto:kyle.orm@turbolt.co.uk">kyle.orm@turbolt.co.uk</a> from the address on your account, telling us which right you are exercising. We will respond within <strong>one month</strong>. If your request is genuinely complex we may extend that by up to two further months, and we will tell you why within the first month. We may ask you to confirm your identity before acting — only to make sure we are not handing your data to somebody else.</p>
+
+<h3>9.2 If you are in California</h3>
+
+<p>California residents have rights under the CCPA/CPRA to know what personal information is collected, to delete it, to correct it, and to opt out of its sale or sharing. We do not sell or share personal information as those terms are defined, and we do not use or disclose sensitive personal information for purposes beyond those permitted without a right to limit. You will never be discriminated against for exercising a right. Use the same contact address above.</p>
+
+<h2>10. Complaining to a regulator</h2>
+
+<p>If you think we have handled your data badly, please tell us first — we would like the chance to fix it. You can also complain directly to a supervisory authority.</p>
+
+<p><strong>United Kingdom — Information Commissioner's Office</strong><br>
+Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF<br>
+Helpline 0303 123 1113 · <a href="https://ico.org.uk/make-a-complaint/">ico.org.uk/make-a-complaint</a></p>
+
+<p><strong>European Economic Area</strong> — the data protection authority for the country where you live, work, or where the issue arose. The list is at <a href="https://edpb.europa.eu/about-edpb/board/members_en">edpb.europa.eu</a>.</p>
+
+<p><strong>Isle of Man</strong> — the Information Commissioner, <a href="https://www.inforights.im">inforights.im</a>.</p>
+
+<h2>11. Children</h2>
+
+<p>Ormy is not intended for children under 13, and accounts are for users aged 16 and over, or 13 and over with a parent or guardian's consent. We do not knowingly collect data from children under 13. If you believe a child under 13 has given us personal data, email us and we will delete it promptly.</p>
+
+<h2>12. This website</h2>
+
+<p>These legal pages are static and set no cookies, use no analytics and run no tracking scripts. They are hosted by GitHub Pages, which records standard server logs including IP addresses for security and abuse prevention, under GitHub's own privacy statement.</p>
+
+<h2>13. Changes to this policy</h2>
+
+<p>We will update this policy when what we do changes. The version in force is the one published here, with its effective date at the top.</p>
+
+<p>If a change materially affects how we use your data, we will tell you in the app or by email at least 14 days before it takes effect, and where the law requires it we will ask for your consent again rather than assume it.</p>
+
+<h2>14. Contact</h2>
+
+<p>Kyle Ormesher, trading as Ormy<br>
+Data protection contact: <a href="mailto:kyle.orm@turbolt.co.uk">kyle.orm@turbolt.co.uk</a></p>
+
+<p>We are a very small team and we read every message ourselves.</p>
+
+<footer>
+  <p>See also the <a href="terms.html">Terms of Service</a>, <a href="refunds.html">Refund Policy</a> and <a href="subprocessors.html">sub-processor list</a>.</p>
+</footer>
+
 </body>
 </html>

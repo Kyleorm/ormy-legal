@@ -1,0 +1,129 @@
+/* Shared styling for every Ormy legal page.
+   One file so a change to type or colour lands on all of them at once — these
+   documents get amended far more often than they get redesigned. */
+
+:root {
+  color-scheme: light dark;
+  --ink: #1a1a2e;
+  --ink-soft: #4a4a63;
+  --bg: #ffffff;
+  --rule: #e4e4ee;
+  --accent: #6b4eff;
+  --panel: #f6f6fb;
+  --warn-bg: #fff6ed;
+  --warn-edge: #f0a05a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8e8f0;
+    --ink-soft: #a9a9c0;
+    --bg: #0d0d1a;
+    --rule: #26263a;
+    --accent: #9d8cff;
+    --panel: #15152a;
+    --warn-bg: #2a1d12;
+    --warn-edge: #b8763a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 20px 80px;
+  line-height: 1.62;
+  color: var(--ink);
+  background: var(--bg);
+  font-size: 17px;
+  -webkit-text-size-adjust: 100%;
+}
+
+a { color: var(--accent); }
+
+h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 0.15em; }
+h2 { font-size: 1.2rem; margin-top: 2.2em; padding-top: 0.6em; border-top: 1px solid var(--rule); }
+h3 { font-size: 1rem; margin-top: 1.8em; margin-bottom: 0.4em; }
+
+.updated { color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 2em; }
+.lede { font-size: 1.05rem; }
+
+/* The plain-English summary that opens each document. Not a substitute for the
+   terms, and says so — but it is the only part most people will ever read. */
+.summary {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin: 0 0 2em;
+}
+.summary h2 {
+  margin: 0 0 0.5em;
+  border: 0;
+  padding: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.summary ul { margin: 0; padding-left: 1.2em; }
+.summary li { margin-bottom: 0.35em; }
+
+/* Clauses a user genuinely needs to have seen. UK consumer law only enforces a
+   liability limit that was brought to the reader's attention — burying it in
+   grey body copy is how these clauses get struck out. */
+.important {
+  background: var(--warn-bg);
+  border-left: 4px solid var(--warn-edge);
+  border-radius: 0 10px 10px 0;
+  padding: 16px 18px;
+  margin: 1.4em 0;
+}
+.important p:first-child { margin-top: 0; }
+.important p:last-child { margin-bottom: 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2em 0;
+  font-size: 0.92rem;
+}
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--rule);
+}
+th { font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); }
+
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+.entity {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.entity p { margin: 0.2em 0; }
+
+.back {
+  display: inline-block;
+  margin-bottom: 1.4em;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--ink-soft);
+}
+.back:hover { color: var(--accent); }
+
+footer {
+  margin-top: 3.5em;
+  padding-top: 1.4em;
+  border-top: 1px solid var(--rule);
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+}
+
+ol li, ul li { margin-bottom: 0.4em; }
+code { background: var(--panel); padding: 1px 5px; border-radius: 4px; font-size: 0.88em; }
