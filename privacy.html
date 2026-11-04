@@ -11,7 +11,8 @@
 <a class="back" href="index.html">← All legal documents</a>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Ormy &middot; Version 2.12 &middot; Effective 2 November 2026</p>
+<p class="updated">Ormy &middot; Version 2.13 &middot; Effective 4 November 2026</p>
+<p class="updated" style="opacity:0.75">Changed in 2.13: from version 1.0.4, the app counts which of its first screens and paywall steps people reach, and how sign-in and the permission questions go, so we can see where setting up Ormy loses people. It uses PostHog, is anonymous, is not linked to your account, keeps no ID on your phone, and never includes your answers or your reminders (sections 2 and 5).</p>
 <p class="updated" style="opacity:0.75">Changed in 2.12: Ormy is now on the App Store, so Ormy&rsquo;s website no longer has a waitlist and no longer asks for your email. If you tap a button to the App Store, the website counts that tap with PostHog and, if the Meta Pixel has loaded, tells Meta (section 12). Nothing changes for anyone who already joined the waitlist.</p>
 <p class="updated" style="opacity:0.75">Changed in 2.11: Ormy&rsquo;s website now asks before using cookies only if you&rsquo;re in the UK or Europe. Elsewhere the Meta Pixel and PostHog&rsquo;s cookies are on from the start, and you can turn them off at any time with &ldquo;Tracking choice&rdquo; at the bottom of the website (section 12). The app is unchanged.</p>
 <p class="updated" style="opacity:0.75">Changed in 2.10: Ormy&rsquo;s website, now at getormy.com, uses PostHog (hosted in the EU) to count visits and see how the page is used. Without your &ldquo;Accept&rdquo; it uses no cookies; with it, it also records your visit, with anything you type hidden (section 12). The app is unchanged.</p>
@@ -142,6 +143,12 @@
       <td>Until you unsubscribe or ask us to delete it.</td>
     </tr>
     <tr>
+      <td><strong>Which setup screens you reach</strong><br><span style="opacity:0.7">Anonymous counts from the app: which of the first screens (onboarding) and paywall steps were shown, which way you chose to sign in and whether it worked, whether you allowed notifications, your yes or no to the AI question, which setup steps you marked done, whether you started a subscription and which plan, and how many reminders you made while setting up. Never your answers to the setup questions, your name, your email or your reminders. Not linked to your account, and no ID is kept on your phone, so each time the app opens counts as a new visitor.</span></td>
+      <td>To see where people give up on setting up Ormy, so we can fix that screen.</td>
+      <td>Legitimate interests &mdash; improving the app</td>
+      <td>Up to a year in PostHog (section 5). Nothing to delete with your account, because it isn&rsquo;t linked to it.</td>
+    </tr>
+    <tr>
       <td><strong>Diagnostic and crash data</strong><br><span style="opacity:0.7">Technical logs, error reports, device model and OS version, collected by Apple and by our infrastructure providers.</span></td>
       <td>To find out why something broke.</td>
       <td>Legitimate interests — keeping the app working and secure</td>
@@ -219,7 +226,7 @@
     <tr><td><strong>Apple</strong></td><td>App distribution, push delivery, payments</td><td>Push token, notification content, purchase records</td><td>United States / global</td></tr>
     <tr><td><strong>RevenueCat</strong></td><td>Subscription management</td><td>An anonymous purchase identifier and subscription status</td><td>United States</td></tr>
     <tr><td><strong>Resend</strong></td><td>Sends our emails: the one confirming you joined the waitlist, later waitlist emails, and feedback you send from the app, passed on to us</td><td>Your email address and what the email says. For feedback, your name, email and message.</td><td>United States</td></tr>
-    <tr><td><strong>PostHog</strong></td><td>Counts visits to our website and shows how it is used. Website only, never the app (section 12)</td><td>Pages viewed, clicks, scrolling, browser and device type, rough location worked out from your IP address. Only with your yes (in the UK and Europe you tap &ldquo;Accept&rdquo;; elsewhere it&rsquo;s on unless you turn it off): a browser ID and a recording of your visit, with anything you type hidden.</td><td>EU (Frankfurt)</td></tr>
+    <tr><td><strong>PostHog</strong></td><td>Counts visits to our website and shows how it is used (section 12). In the app, counts which setup screens and paywall steps are reached (section 2)</td><td>Website: pages viewed, clicks, scrolling, browser and device type, rough location worked out from your IP address. Only with your yes (in the UK and Europe you tap &ldquo;Accept&rdquo;; elsewhere it&rsquo;s on unless you turn it off): a browser ID and a recording of your visit, with anything you type hidden. App: the screen or step reached, the sign-in method and any error code, the notification and AI answers, the plan chosen, a count of reminders made, and the app and iOS version. Like any server, it sees your IP address; it isn&rsquo;t asked to work out a location from it. No ID, no account, no recordings.</td><td>EU (Frankfurt)</td></tr>
   </tbody>
 </table>
 </div>
